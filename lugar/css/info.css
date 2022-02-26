@@ -1,0 +1,22 @@
+.info-content {
+    width: 50%;
+}
+.info-content > p {
+    margin: 1.2rem 0;
+}
+.info-content > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.exper-info {
+    width: 30%;
+}
+.exper-info > h5 {
+    color: #c3dfe6;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.exper-info > p {
+    font-size: 2rem;
+}

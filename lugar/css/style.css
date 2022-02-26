@@ -1,0 +1,219 @@
+@import "navbar.css";
+@import "footer.css";
+@import "header.css";
+@import "contact.css";
+@import "product.css";
+@import "comment.css";
+@import "info.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+.filter-img {
+    filter: saturate(20%);
+}
+h2 {
+    color: #1b2d3b;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+.text {
+    color: #bfbfbf;
+    font-size: 1rem;
+}
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+.sec-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.sec-img {
+    object-fit: cover;
+    width: 40%;
+}
+.sec-img > img {
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+    .header-content {
+        flex-direction: column;
+        height: 90%;
+    }
+    .header-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        margin-top: 3rem;
+    }
+    .header-box {
+        width: 100%;
+        padding-right: 1rem;
+    }
+    .header-content h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .menu-checkbox:checked ~ ul {
+        display: block;
+    }
+    header ul {
+        animation: menu 0.1s forwards 0.2s;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        right: -100%;
+        background-color: #b0d3e4;
+        display: none;
+        height: 100%;
+        width: auto;
+        transition: right 5s ease;
+    }
+    header ul li {
+        margin: 1rem 4rem 0 1rem;
+    }
+    .menu-button {
+        display: block;
+    }
+    .header-box h1 > br {
+        display: none;
+    }
+    .sec-wrap {
+        width: 95%;
+        flex-direction: column;
+    }
+    .sec-img {
+        margin-bottom: 2rem;
+        width: 60%;
+    }
+    .info-content {
+        width: 90%;
+    }
+    .carousel{
+        width: 100%;
+    }
+    .carousel-container{
+        width: 90%;
+    }
+    .product-wrapper {
+        width: 90%;
+    }
+    .comment-wrap {
+        width: 90%;
+    }
+    .slider-container{
+        margin: 0;
+    }
+    .comment-content {
+        flex-direction: column;
+    }
+    .comment-content-wrap > button{
+        display: none;
+    }
+    .comment-box{
+        width: 90%;
+    }
+    .form-content {
+        width: 90%;
+    }
+    footer {
+        padding: 2rem 3rem;
+        height: 30rem;
+    }
+    .footer-info {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .footer-top {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 468px) {
+    .header-box > h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .header-img {
+        width: 80%;
+    }
+    .sec-img{
+        width: 80%;
+    }
+    .exper-info {
+        width: 40%;
+    }
+    .exper-info:last-child {
+        margin-top: 1rem;
+    }
+    footer {
+        height: 52rem;
+    }
+    .footer-info {
+        flex-direction: column;
+    }
+    .footer-info div{
+        margin: 1rem 0;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .header-img {
+        height: 40%;
+    }
+}
+/* @media only screen and (min-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+} */
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 1960px) {
+    html {
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 2560px) {
+    html {
+        font-size: 32px;
+    }
+}
+@media only screen and (min-width: 2880px) {
+    html {
+        font-size: 36px;
+    }
+}
+@media only screen and (min-width: 3264px) {
+    html {
+        font-size: 41px;
+    }
+}

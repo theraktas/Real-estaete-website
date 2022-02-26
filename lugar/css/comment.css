@@ -1,0 +1,102 @@
+.comment-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.comment-info { 
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.comment-info > p {
+    margin: 1rem;
+    font-weight: 700;
+    color: #5e686d;
+}
+.comment-content-wrap {
+    display: flex;
+    position: relative;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+}
+.slider-container{
+    min-width: 100%;
+    display: flex;
+    transition: all 0.4s ease-in-out;
+    margin: 0 0.2rem;
+}
+.comment-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    min-width:100%;
+}
+.comment-img{
+    height: 20rem;
+}
+.comment-img img{
+    height: 100%;
+    object-fit: cover;
+}
+.comment-content-wrap  button {
+    cursor: pointer;
+    font-size: 1.4rem;
+    border: none;
+    background-color: transparent;
+    color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.2s ease;
+    z-index: 10;
+}
+.comment-content-wrap  button:hover {
+    color: #b0d3e4;
+}
+.prv-btn {
+    left: -10%;
+} 
+.nxt-btn {
+    right: -10%;
+}
+.nails {
+    display: flex;
+}
+.nail {
+    display: block;
+    width: 0.7rem;
+    height: 1.3rem;
+    background: #b0d3e4;
+    transform: skew(-20deg);
+}
+.nail:first-child {
+    margin-right: 0.7rem;
+}
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.comment-box > h3 {
+    color: #0c2435;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+.comment-box h4 {
+    color: #1c2c38;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.comment-box > p {
+    color: #536471;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
